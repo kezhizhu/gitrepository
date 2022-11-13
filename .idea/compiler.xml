@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springfromscratch" />
+
         <module name="jpaexample" />
       </profile>
     </annotationProcessing>
@@ -14,7 +14,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jpaexample" options="-parameters" />
-      <module name="springfromscratch" options="-parameters" />
+
     </option>
   </component>
 </project>
