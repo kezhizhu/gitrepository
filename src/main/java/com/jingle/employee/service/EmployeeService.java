@@ -5,6 +5,8 @@ import com.jingle.employee.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EmployeeService {
 
@@ -19,5 +21,9 @@ public class EmployeeService {
     }
     public Employee findById(int id) {
         return employeeRepository.findById(id);
+    }
+
+    public List<Employee> findAllEmployees() {
+        return employeeRepository.findAll();
     }
 }

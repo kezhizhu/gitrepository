@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.example.product.ProductServiceControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.771 s - in com.example.product.ProductServiceControllerTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.471 s <<< FAILURE! - in com.example.product.ProductServiceControllerTest
+getProductsList  Time elapsed: 0.217 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mvc" is null
+	at com.example.product.ProductServiceControllerTest.getProductsList(ProductServiceControllerTest.java:25)
+
+createProduct  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.test.web.servlet.MockMvc.perform(org.springframework.test.web.servlet.RequestBuilder)" because "this.mvc" is null
+	at com.example.product.ProductServiceControllerTest.createProduct(ProductServiceControllerTest.java:41)
+
