@@ -1,8 +1,11 @@
+D:\study\springboot\gitrepository\src\main\java\com\jingle\portal\entity\RestWeather.java
+D:\study\springboot\gitrepository\src\main\java\com\jingle\portal\schedule\ScheduledTasks.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\entity\Employee.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\repository\EmployeeRepository.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\listener\StartupListener.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\ECommerceApplication.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\interceptor\EmployeeInterceptor.java
+D:\study\springboot\gitrepository\src\main\java\com\jingle\portal\entity\Weather.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\interceptor\EmployeeInterceptorAppConfig.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\service\EmployeeService.java
 D:\study\springboot\gitrepository\src\main\java\com\jingle\employee\controller\EmployeeController.java

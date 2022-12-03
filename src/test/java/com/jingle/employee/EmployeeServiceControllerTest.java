@@ -18,7 +18,7 @@ public class EmployeeServiceControllerTest extends AbstractTest {
 
     @Test
     public void getEmployee() throws Exception {
-        String uri = "/employee/10";
+        String uri = "/employee/6";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
 
@@ -26,6 +26,7 @@ public class EmployeeServiceControllerTest extends AbstractTest {
         assertEquals(200, status);
         String content = mvcResult.getResponse().getContentAsString();
         Employee employee = super.mapFromJson(content, Employee.class);
+        System.out.println(employee.getName());
         assertEquals("kezhi1", employee.getName());
     }
     @Test
