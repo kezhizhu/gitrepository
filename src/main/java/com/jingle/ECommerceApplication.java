@@ -8,19 +8,19 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
+
 public class ECommerceApplication {
 
     private static final Logger log = LoggerFactory.getLogger(ECommerceApplication.class);
-    //private static final Logger log =
+
     public static void main(String[] args) {
         //SpringApplication.run(ECommerceApplication.class, args);
-
         SpringApplication application = new SpringApplication(ECommerceApplication.class);
  //       application.setApplicationStartup(new BufferingApplicationStartup(2048));
         application.run(args);
 
-    }
 
+    }
 
 
 }

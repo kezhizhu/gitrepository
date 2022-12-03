@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.jingle.customer.FactoryBeanXmlConfigTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in com.jingle.customer.FactoryBeanXmlConfigTest
+testConstructWorkerByXml  Time elapsed: 0.017 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.jingle.employee.entity.Employee.getId()" because "this.employee" is null
+	at com.jingle.customer.FactoryBeanXmlConfigTest.testConstructWorkerByXml(FactoryBeanXmlConfigTest.java:15)
+

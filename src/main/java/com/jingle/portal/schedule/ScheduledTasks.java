@@ -23,6 +23,7 @@ public class ScheduledTasks {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
     @Autowired
     private RestTemplate restTemplate;
+    //in case call weather api to many times cause the fee( 1000/ per day is the limit)
     //@Scheduled(fixedRate = 50000)// if you need then scheduled, otherwise need money
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));

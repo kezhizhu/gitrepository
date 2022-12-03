@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: com.jingle.employee.EmployeeServiceControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.947 s - in com.jingle.employee.EmployeeServiceControllerTest
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.346 s <<< FAILURE! - in com.jingle.employee.EmployeeServiceControllerTest
+getEmployee  Time elapsed: 0.192 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+	at com.jingle.employee.EmployeeServiceControllerTest.getEmployee(EmployeeServiceControllerTest.java:28)
+

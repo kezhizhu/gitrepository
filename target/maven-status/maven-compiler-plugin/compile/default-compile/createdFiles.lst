@@ -1,11 +1,14 @@
 com\jingle\employee\service\EmployeeService.class
 com\jingle\portal\schedule\ScheduledTasks.class
 com\jingle\listener\StartupListener.class
+com\jingle\base\RestMessage.class
 com\jingle\employee\entity\Employee.class
 com\jingle\ECommerceApplication.class
 com\jingle\portal\entity\Weather.class
 com\jingle\employee\controller\EmployeeController.class
 com\jingle\employee\interceptor\EmployeeInterceptorAppConfig.class
 com\jingle\portal\entity\RestWeather.class
+com\jingle\spboottest\CustomerFactory.class
+com\jingle\customer\Customer.class
 com\jingle\employee\interceptor\EmployeeInterceptor.class
 com\jingle\employee\repository\EmployeeRepository.class

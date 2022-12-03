@@ -2,7 +2,10 @@ package com.jingle.employee.controller;
 
 import com.jingle.employee.entity.Employee;
 import com.jingle.employee.service.EmployeeService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +17,10 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
+    @Autowired
+    private ApplicationContext applicationContext ;
+
+    private static Logger log = LoggerFactory.getLogger(EmployeeController.class);
     @PostMapping(value = "/employee/save")
     public ResponseEntity save(@RequestBody Employee employee) {
         employeeService.save(employee);
@@ -24,6 +31,7 @@ public class EmployeeController {
     @GetMapping(value = "/employee/{id}")
     public ResponseEntity get(@PathVariable int id) {
 
+        System.out.println(applicationContext.getEnvironment());
         Employee employee = employeeService.findById(id);
 
         ResponseEntity res = new ResponseEntity(employee,null,HttpStatus.OK);
